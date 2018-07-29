@@ -19,7 +19,7 @@ def testmodel(path):
         right = 0
         res = []
         for i,tag in enumerate(test_y):
-            if tag in predict_y[i][21-num:21]:
+            if tag in predict_y[i][-5:]:
                 right += 1
                 res.append(True)
             else:
